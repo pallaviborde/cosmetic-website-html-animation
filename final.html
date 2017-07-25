@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Final Exam</title>
+    <style>
+.fadein img {
+    position:absolute;
+    left:-65px;
+    top:0;
+    height: 100%;
+    width: 100%;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 30s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    background-color: white;
+    animation-delay: -5s;
+}
+#f2 {
+    animation-delay: -10s;
+    background-color: white;
+}
+#f3 {
+    animation-delay: -15s;
+    background-color: white;
+}
+
+#f4{
+	animation-delay: -20s;
+    background-color: white;
+}
+#f5 {
+    animation-delay: -25s;
+    background-color: white;
+}
+#f6{
+	animation-delay: -30s;
+    background-color: white;
+}
+
+.radio{
+    text-align: center;
+    
+    border-spacing: 200px;
+    width: 100%; height: 20%;
+    position: relative;
+
+}
+
+#movetxt {
+    font-size: 300%;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: moving 5s infinite;
+    animation: moving 10s infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    0%{
+        top: 250px;
+        left: 0px;
+        color: red;
+    }
+    25% {
+            top: 550px;
+            left: 250px;
+            color: yellow;
+        }
+
+        50% {
+            top:250px;
+            left:500px;
+            color: red;
+        }
+
+        75% {
+            top:550px;
+            left:750px;
+            color: green;
+        }
+
+        100%{
+            top:250px;
+            left:1000px;
+            color: blue;
+        }
+
+}
+
+label{
+    color: #8E3F2B;
+}
+
+/* nails image display */
+
+
+input#nails:checked ~ div#content{
+    display: block;
+
+    animation: nails_image 5s forwards;
+    animation-iteration-count: 1;
+    
+     
+
+}
+
+div#content{
+    display: none;
+}
+
+#content{
+    
+        width:200px;
+        height:250px;
+        position:absolute;
+        
+        background-image: url(nails4.jpg);
+
+
+        
+        
+
+    }
+
+@keyframes nails_image {
+    0%{
+        top: 50px;
+        left: 0px;
+        
+    }
+    100%{
+        top: 450px;
+            left: 500px;
+            border-radius: 50%;
+            -webkit-transform: rotate(30deg) translate(-100px, 0px);
+            
+
+    }
+}
+/* nails image display end*/
+/* lipstick image display */
+input#lipstick:checked ~ div#content1{
+    display: block;
+
+    animation: lipstick_image 5s forwards;
+    animation-iteration-count: 1;
+    
+     
+
+}
+
+div#content1{
+    display: none;
+}
+
+#content1{
+    
+        width:200px;
+        height:200px;
+        position:absolute;
+        
+        background-image: url(lipstick.jpg);
+    }
+
+@keyframes lipstick_image {
+    0%{
+        top: 50px;
+        left: 0px;
+        
+    }
+    100%{
+        top: 350px;
+            left: 550px;
+            border-radius: 50%;
+            transform: rotate(90deg) translate(-100px, 0px);
+            
+
+    }
+    }
+
+    /* lipstick image display end */
+
+/* face image display */
+input#face:checked ~ div#content2{
+    display: block;
+
+    animation: face_image 5s forwards;
+    animation-iteration-count: 1;
+    
+     
+
+}
+
+div#content2{
+    display: none;
+}
+
+#content2{
+    
+        width:200px;
+        height:200px;
+        position:absolute;
+        
+        background-image: url(face.jpg);
+    }
+
+@keyframes face_image {
+    0%{
+        top: 50px;
+        left: 0px;
+        
+    }
+    100%{
+        top: 350px;
+            left: 550px;
+            border-radius: 50%;
+            transform: rotate(90deg) translate(-100px, 0px);
+            
+
+    }
+    
+
+        
+
+}
+/* face image display end */
+
+/* mascara image display */
+input#mascara:checked ~ div#content3{
+    display: block;
+
+    animation: mascara_image 5s forwards;
+    animation-iteration-count: 1;
+    
+     
+
+}
+
+div#content3{
+    display: none;
+}
+
+#content3{
+    
+        width:200px;
+        height:250px;
+        position:absolute;
+        
+        background-image: url(mascara.jpeg);
+    }
+
+@keyframes mascara_image {
+    0%{
+        top: 50px;
+        left: 0px;
+        
+    }
+    100%{
+        top: 350px;
+            left: 550px;
+            border-radius: 50%;
+            transform: rotate(90deg) translate(-100px, 0px);
+            
+
+    }
+    
+
+        
+
+}
+/* mascara image display end */
+
+input[type="radio"]{
+    margin: 0 60px 0 60px;
+}
+
+
+.fadein:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(127, 127, 127, 0.5);
+    background-image: radial-gradient(black 33%, transparent 33%);
+    background-size: 5px 5px;
+}
+
+</style>
+    <body>
+  <div class="dotted"> 	
+<div class="fadein">
+    <img id="f3" src="img1.jpg">
+    <img id="f2" src="img2.jpg">
+    <img id="f1" src="img3.jpg">
+    <img id="f4" src="img4.jpg">
+    <img id="f5" src="img5.jpg">
+    <img id="f6" src="img6.jpg">
+    
+</div>
+</div> 
+</div>
+    <div id="movetxt">For Sale
+    </div>
+<div class="radio">
+            
+        <input type="radio" name="choice" id="nails" > 
+        <label for="nails">Nails</label>
+        <div id="content"></div>
+
+
+
+        <input type="radio" name="choice" id="lipstick"> 
+        <label for="nails">Lipstick</label>
+        <div id="content1"></div>
+
+
+        <input type="radio" name="choice" id="face">
+        <label for="nails">Face</label>
+        <div id="content2"></div>
+
+        <input type="radio" name="choice" id="mascara">
+        <label for="nails">Mascara</label>
+        <div id="content3"></div>
+        
+    
+
+</body>
